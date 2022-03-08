@@ -1,4 +1,4 @@
-unction compute()
+function compute()
 {
     p = document.getElementById("principal").value;
 
