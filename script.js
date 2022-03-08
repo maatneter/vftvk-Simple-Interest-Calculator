@@ -4,14 +4,14 @@ function compute() {
     var years = document.getElementById("years").value;
 
     if (principal <= 0) {
-        window.alert("Enter a positive number");
+        window.alert("Enter Amont");
         document.getElementById("principal").focus();
     } else {
         var interest = principal * rate * years / 100;
-        var year = new Date().getFullYear();
-        var yearsFromNow = (+year) + (+years);
+        var yearNow = new Date().getFullYear();
+        var yearsFromNow = (+yearNow) + (+years);
         var result = document.getElementById("result");
-        result.innerTEXT =
+        result.innerHTML =
             '<div>' +
             'If you deposit <span class="number" id="principalResult\">' + principal + '</span>,<br/>' +
             'at an interest rate of <span class="number" id="rateResult">' + rate + '%</span>.<br/>' +
@@ -21,7 +21,6 @@ function compute() {
     }
 }
 
-function updateRate() { 
-    var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerTEXT = rateval;
-}
+function slider() { 
+    var slideValue = document.getElementById("rate").value;
+    document.getElementById("slider_value").innerHTML = slideValue + "%";
