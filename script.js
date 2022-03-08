@@ -4,7 +4,7 @@ function compute() {
     var years = document.getElementById("years").value;
 
     if (principal <= 0) {
-        window.alert("Enter Amont");
+        window.alert("Enter Amount");
         document.getElementById("principal").focus();
     } else {
         var interest = principal * rate * years / 100;
