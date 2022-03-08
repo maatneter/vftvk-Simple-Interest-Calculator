@@ -10,19 +10,8 @@
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Interest Rate <input type="range" min="1" max="20" step="0.25" value="10.25" id="rate" onchange=refreshSlider()>  <span id="slide_value">10.25%</span><br/>
+        Interest Rate <input type="range" min="1" max="20" step="0.25" value="10.25" id="rate" onchange=Slider()>  <span id="slide_value">10.25%</span><br/>
         No. of Years <input list="yearOptions" id="years">
-    <datalist id="yearOptions">
-        <option value="1">
-        <option value="2">
-        <option value="3">
-        <option value="4">
-        <option value="5">
-        <option value="6">
-        <option value="7">
-        <option value="8">
-        <option value="9">
-        <option value="10">
     <datalist id="yearOptions">
         <option value="1">
         <option value="2">
@@ -40,7 +29,7 @@
     <button onclick="compute()">Compute Interest</button>
     <br/>
     <br>
-    Interest : <span id="result"></span><br/>
+    Interest : <span id="results"></span><br/>
     <footer>&#169 Everyone Can Get Rich</footer>
 </div>
 </body>
