@@ -10,7 +10,7 @@ function compute() {
         var interest = principal * rate * years / 100;
         var yearNow = new Date().getFullYear();
         var yearsFromNow = (+yearNow) + (+years);
-        var result = document.getElementById("result");
+        var result = document.getElementById("results");
         result.innerHTML =
             '<div>' +
             'If you deposit <span class="number" id="principalResult\">' + principal + '</span>,<br/>' +
@@ -21,7 +21,7 @@ function compute() {
     }
 }
 
-function refreshslider() { 
+function refreshslider(){ 
     var rateLabel = document.getElementById("rate").value;
-    document.getElementById("refreshslider").innerHTML = rateLabel + "%";
+    document.getElementById("rateLabel").innerHTML = rate.value + "%";
 }
