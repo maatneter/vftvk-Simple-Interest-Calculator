@@ -7,11 +7,22 @@ function compute()
         principal.focus()
         return
     }
-    let interest = principal.value * years.value * rate.value / 100;
-    yearInFuture = new Date().getFullYear() + parseInt(years.value);
-    result = document.getElementById("result")
-    result.innerHTML = "<p>If you deposit <mark>"+ principal.value +"</mark>,<br>an interest rate of <mark>" + rate.value + "%</mark>.<br>You will receive an amount of <mark>"+interest+"</mark>,<br>in the year <mark>"+yearInFuture+"</mark></p>";
-
+    if (principal <= 0) {
+        window.alert("Enter a positive number");
+        document.getElementById("principal").focus();
+    } 
+    else {
+        var interest = principal * rate * years / 100;
+        var yearNow = new Date().getFullYear();
+        var yearsFromNow = (+yearNow) + (+years);
+        var result = document.getElementById("result");
+        result.innerHTML =
+            '<div>' +
+            'If you deposit <span class="number" id="principalResult\">' + principal + '</span>,<br/>' +
+            'at an interest rate of <span class="number" id="rateResult">' + rate + '%</span>.<br/>' +
+            'You will receive an amount of <span class="number" id="interestResult">' + interest + '</span>,<br/>' +
+            'in the year <span class="number" id="futureYearResult">' + yearsFromNow + '</span>.<br/>' +
+            '</div>'
 }
 
 function refreshSlider(){
