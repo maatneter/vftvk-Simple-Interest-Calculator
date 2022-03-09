@@ -2,8 +2,8 @@ function compute()
 {
     if(principal.value < 1){
         alert("Enter Positive Amount")
-        document.getElementById("principal").focus();
-        else
+        principal.focus();
+        return
     }
     let interest = principal.value * years.value * rate.value / 100;
     yearInFuture = new Date().getFullYear() + parseInt(years.value);
