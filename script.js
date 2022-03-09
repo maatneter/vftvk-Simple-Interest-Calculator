@@ -21,7 +21,7 @@ function compute() {
     }
 }
 
-function slider() { 
-    var slideValue = document.getElementById("rate").value;
+function refreshslider() { 
+    var rateLabel = document.getElementById("rate").value;
     document.getElementById("refreshslider").innerHTML = rateLabel + "%";
 }
