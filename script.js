@@ -10,11 +10,11 @@ function compute() {
         var interest = principal * rate * years / 100;
         var yearNow = new Date().getFullYear();
         var yearsFromNow = (+yearNow) + (+years);
-        var result = document.getElementById("results");
+        var result = document.getElementById("result");
         result.innerHTML =
             '<div>' +
             'If you deposit <span class="number" id="principalResult\">' + principal + '</span>,<br/>' +
-            'at an interest rate of <span class="number" id="rateResult">' + rate + '%</span>.<br/>' +
+            'at an interest rate of <span class="number" id="rateLabel">' + rate + '%</span>.<br/>' +
             'You will receive an amount of <span class="number" id="interestResult">' + interest + '</span>,<br/>' +
             'in the year <span class="number" id="futureYearResult">' + yearsFromNow + '</span>.<br/>' +
             '</div>'
@@ -23,5 +23,5 @@ function compute() {
 
 function refreshslider(){ 
     var rateLabel = document.getElementById("rate").value;
-    document.getElementById("refreshslider").innerHTML = rateLabel + "%";
+    document.getElementById("rateLabel").innerHTML = rate.value + "%";
 }
