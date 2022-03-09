@@ -23,5 +23,5 @@ function compute() {
 
 function refreshslider(){ 
     var rateLabel = document.getElementById("rate").value;
-    document.getElementById("rateLabel").innerHTML = rate.value + "%";
+    document.getElementById("refreshslider").innerHTML = rate.value + "%";
 }
