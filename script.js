@@ -8,7 +8,7 @@ function compute() {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     } else {
-        document.getElementById("result").innerHTML = "If you deposit \<span\>" + principal + "\</span\>, \<br\>at an interest rate of \<span\>" + rate + "%\</span\>. \<br\>You will receive an amount of \<span\>" + interest + "\</span\>, \<br\>in the year \<span\>" + year + "\</span\>";
+        document.getElementById("results").innerHTML = "If you deposit \<span\>" + principal + "\</span\>, \<br\>at an interest rate of \<span\>" + rate + "%\</span\>. \<br\>You will receive an amount of \<span\>" + interest + "\</span\>, \<br\>in the year \<span\>" + year + "\</span\>";
     }
 }
 function updateRate() {
