@@ -1,31 +1,23 @@
-body {background-color:black; font-family:arial; color: white;}
-h1{color:grey; font-family:verdana;}
+body {
+    background-color: black;
+    font-family: Arial;
+    color: white;
+}
+
+h1 {
+    color: grey;
+    font-family: Verdana;
+}
+
 .maindiv {
-  background-color: white;
-  color: black;
-  width: 300px;
-  padding: 20px;
-  border-radius: 25px;
-  margin: auto;
-}
-.inputdiv {
-  padding-left: 50px;
-  padding-bottom: 20px;
-}
-.inputdiv input {
-  margin-left: 50px;
-  margin-top: 20px;
-}
-.inputdiv select {
-  margin-left: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-#result span {
-  background-color: yellow;
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
 }
 
-
-
-
-
+.number {
+    background-color: yellow;
+}
