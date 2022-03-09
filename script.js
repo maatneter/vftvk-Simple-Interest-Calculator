@@ -1,17 +1,11 @@
-function compute()
-{
-    p = document.getElementById("principal").value;
+    var principal = document.getElementById("principal").value;
+    var rate = document.getElementById("rate").value;
+    var years = document.getElementById("years").value;
 
-    if(principal.value < 1){
-        alert("Enter Amount")
-        principal.focus()
-        return
-    }
     if (principal <= 0) {
         window.alert("Enter a positive number");
         document.getElementById("principal").focus();
-    } 
-    else {
+    } else {
         var interest = principal * rate * years / 100;
         var yearNow = new Date().getFullYear();
         var yearsFromNow = (+yearNow) + (+years);
@@ -23,21 +17,11 @@ function compute()
             'You will receive an amount of <span class="number" id="interestResult">' + interest + '</span>,<br/>' +
             'in the year <span class="number" id="futureYearResult">' + yearsFromNow + '</span>.<br/>' +
             '</div>'
-}
-
-function refreshSlider(){
-rate.value
-document.getElementById("rateLabel").innerText = rate.value + "%"}
-
-finishPage = () =>{
-    var rate = document.getElementById("rate");
-    var principal = document.getElementById("principal");
-    var years = document.getElementById("years");
-    years = document.getElementById("years");
-    for(i=1; i<=10; i++){
-    	let element = document.createElement("option")
-    	element.innerText = i
-    	element.setAttribute("value", i)
-    	years.appendChild(element)
     }
 }
+
+function slider() { 
+    var slideValue = document.getElementById("rate").value;
+    document.getElementById("rateLabel").innerHTML = refreshslider + "%";
+}
+
